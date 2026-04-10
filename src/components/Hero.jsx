@@ -22,9 +22,13 @@ function Hero() {
           LinkedIn
         </a>
 
-        <button className="border-2 border-cyan-400 px-8 py-3 rounded-lg font-semibold text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 transform hover:scale-105 transition-all duration-300">
-          Download Resume
-        </button>
+       <a
+  href="/resume.pdf"
+  download
+  className="border-2 border-cyan-400 px-8 py-3 rounded-lg font-semibold text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 transform hover:scale-105 transition-all duration-300"
+>
+  Download Resume
+</a>
       </div>
 
       <div className="mt-16 animate-float">
