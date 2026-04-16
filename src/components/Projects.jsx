@@ -5,19 +5,22 @@ function Projects() {
       title: "AI Recruitment System",
       desc: "AI-powered hiring platform using React, Django, NLP and Gemini API.",
       icon: "🤖",
-      gradient: "from-cyan-500"
+      gradient: "from-cyan-500",
+      github: "https://github.com/Kedar09-stark/Talent-HR"
     },
     {
       title: "Food Share Platform",
       desc: "Web platform connecting hotels with NGOs to reduce food waste.",
       icon: "🍽️",
-      gradient: "from-purple-500"
+      gradient: "from-purple-500",
+      github: "https://github.com/Kedar09-stark/Mealshare" // Add your repo link
     },
     {
       title: "Crop Yield Prediction",
       desc: "Machine learning system predicting crop yields using weather data.",
       icon: "🌾",
-      gradient: "from-pink-500"
+      gradient: "from-pink-500",
+      github: "https://github.com/Kedar09-stark/MahaBhoomi-crop_predictor" // Add your repo link
     }
   ]
 
@@ -52,9 +55,16 @@ function Projects() {
                   {project.desc}
                 </p>
 
-                <button className="text-cyan-400 font-semibold hover:text-purple-400 transition-colors duration-300 flex items-center gap-2">
-                  View More →
-                </button>
+                {project.github && (
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-cyan-400 font-semibold hover:text-purple-400 transition-colors duration-300 flex items-center gap-2 inline-block"
+                  >
+                    View More →
+                  </a>
+                )}
               </div>
             </div>
           ))}
